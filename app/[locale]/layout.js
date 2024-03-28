@@ -3,6 +3,7 @@ import { useMessages, useTimeZone } from "next-intl";
 import { Manrope, Merriweather } from "next/font/google";
 
 import { RootLayoutWrapper } from "components";
+import { CookiesProvider } from "next-client-cookies/server";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -44,13 +45,15 @@ export default function RootLayout({ children, params: { locale } }) {
         <meta name="theme-color" content="#00B36D" />
       </head>
       <body>
-        <RootLayoutWrapper
-          locale={locale}
-          messages={messages}
-          timezone={timezone}
-        >
-          {children}
-        </RootLayoutWrapper>
+        <CookiesProvider>
+          <RootLayoutWrapper
+            locale={locale}
+            messages={messages}
+            timezone={timezone}
+          >
+            {children}
+          </RootLayoutWrapper>
+        </CookiesProvider>
       </body>
     </html>
   );

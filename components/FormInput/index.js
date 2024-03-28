@@ -1,5 +1,5 @@
-"use client";
-import { useEffect, useRef } from "react";
+"use client"
+import React, { useEffect, useRef } from "react";
 
 const FormInput = (props) => {
   const { id, label, prefix, error, isOptional, ...restProps } = props;
