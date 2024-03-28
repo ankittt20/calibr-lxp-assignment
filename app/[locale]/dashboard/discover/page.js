@@ -1,5 +1,5 @@
 "use client";
-import { SideBar } from "components";
+import { DashboardHeader, SideBar } from "components";
 import { AuthHoc } from "hoc";
 import { useRecoilValue } from "recoil";
 import { authAtom } from "state/authAtom";
@@ -17,7 +17,7 @@ const HomePage = () => {
         )}
 
         <div id="main-content" className="h-full w-full">
-          {/* {token ? <DashboardHeader isHome={true} /> : null} */}
+          {token ? <DashboardHeader isHome={true} /> : null}
         </div>
       </div>
     </AuthHoc>

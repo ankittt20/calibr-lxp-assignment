@@ -4,6 +4,8 @@ import Loader from "./Loader";
 import FormInput from "./FormInput";
 import CustomButton from "./CustomButton";
 import SideBar from "./SideBar";
+import UserProfileMenu from "./UserProfileMenu";
+import DashboardHeader from "./DashboardHeader";
 
 export {
   RootLayoutWrapper,
@@ -12,4 +14,6 @@ export {
   FormInput,
   CustomButton,
   SideBar,
+  UserProfileMenu,
+  DashboardHeader,
 };
