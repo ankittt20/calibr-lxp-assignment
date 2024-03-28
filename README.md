@@ -14,6 +14,24 @@ pnpm dev
 bun dev
 ```
 
+## Running the App
+Before running the development server with Chrome web security disabled, ensure you have Node.js installed on your machine.
+
+### Disabling Chrome Web Security
+
+#### Mac
+
+Open Terminal and run the following command to start Google Chrome with web security disabled:
+
+open -na "Google Chrome" --args --disable-web-security --user-data-dir=/tmp/chrome-test
+
+#### Windows
+
+1. Press Win + R to open the Run dialog.
+2. Enter the following command and press Enter:
+
+chrome.exe --disable-web-security --user-data-dir="C:\chrome_dev"
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
