@@ -1,5 +1,6 @@
 "use client";
 import { DashboardHeader, SideBar } from "components";
+import MyLearning from "components/MyLearning";
 import { AuthHoc } from "hoc";
 import { useRecoilValue } from "recoil";
 import { authAtom } from "state/authAtom";
@@ -17,7 +18,10 @@ const HomePage = () => {
         )}
 
         <div id="main-content" className="h-full w-full">
-          {token ? <DashboardHeader isHome={true} /> : null}
+          <div className="bg-[#E4EFFF] h-80">
+            {token ? <DashboardHeader isHome={true} /> : null}
+            <MyLearning />
+          </div>
         </div>
       </div>
     </AuthHoc>
