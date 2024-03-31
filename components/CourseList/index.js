@@ -1,7 +1,6 @@
 import CourseCard from "components/CourseCard";
 import ProgressBar from "components/ProgressBar";
 import Image from "next/image";
-import React from "react";
 
 const CourseList = () => {
   const courses = [

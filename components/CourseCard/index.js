@@ -5,7 +5,7 @@ const CourseCard = ({ category, title, description, progress, duration }) => {
   return (
     <div className="bg-white w-full border border-[#EBEBEB] rounded-xl p-5 mb-4">
       <div className="flex items-center pb-2">
-        <div className="pr-4 w-[88%]">
+        <div className="pr-4 w-[85%]">
           <h5
             className={
               "text-sm font-medium mb-2 " +

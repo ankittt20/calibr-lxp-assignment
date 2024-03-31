@@ -1,5 +1,3 @@
-// components/ProgressBar.tsx
-
 const ProgressBar = ({ progress }) => {
   return (
     <div className="h-2 w-52 rounded-full bg-[#EDEDED]">

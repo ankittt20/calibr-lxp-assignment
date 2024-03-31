@@ -1,7 +1,7 @@
 import CourseList from "components/CourseList";
 import Image from "next/image";
 
-const MyLearning = () => {
+const MyLearning = (props) => {
   return (
     <>
       <div className="bg-white md:flex justify-center mx-4 md:mx-16 my-8 md:my-16 space-x-5 border border-[#EBEBEB] rounded-[14px]">
