@@ -89,7 +89,7 @@ const CourseList = () => {
       </div>
       <div>
         {courses.map((course) => (
-          <div className="flex space-x-5 items-center">
+          <div key={course.id} className="flex space-x-5 items-center">
             <Image
               src={
                 course.progress === "Completed"
@@ -103,7 +103,6 @@ const CourseList = () => {
               height={40}
             />
             <CourseCard
-              key={course.id}
               category={course.category}
               title={course.title}
               description={course.description}
